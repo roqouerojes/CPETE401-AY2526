@@ -1,9 +1,4 @@
 
-create table students (
-    lname varchar(100), 
-    fname varchar (100)
-);
-
 create table authors(
     id int(100), 
     lname varchar(100), 
