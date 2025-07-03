@@ -14,8 +14,7 @@ create table authors(
 
 create table publishers (
     unique_id int(100), 
-    lname varchar(100), 
-    fname varchar(100), 
+    publisher varchar(100), 
     country varchar(100)
 );
 
@@ -46,8 +45,7 @@ create table doctors(
 
 create table appointment(
     appointment_id int(100), 
-    appointment date, 
-    start_time datetime, 
+    appointment_and_start_time datetime, 
     reason text, 
     status enum ('scheduled', 'completed', 'canceled', 'no-show') 
 );
