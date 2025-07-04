@@ -1,5 +1,6 @@
+
 create table authors(
-    authors_id INT PRIMARY KEY AUTO_INCREMENT, 
+    authors_id int, 
     lname varchar(100), 
     fname varchar(100),
     biography text, 
@@ -7,13 +8,13 @@ create table authors(
 );
 
 create table publishers (
-    unique_id INT PRIMARY KEY AUTO_INCREMENT, 
+    unique_id int, 
     publisher_name varchar(100), 
     country varchar(100) 
 );
 
 create table books (
-    book_id INT PRIMARY KEY, 
+    book_id int, 
     booktitle text, 
     isbn int(100), 
     publication date, 
@@ -21,7 +22,7 @@ create table books (
 );
 
 create table patients(
-    patient_id INT PRIMARY KEY AUTO_INCREMENT, 
+    patient_id int, 
     lname varchar(100), 
     fname varchar(100), 
     birth date, 
@@ -30,7 +31,7 @@ create table patients(
 );
 
 create table doctors(
-    doc_id INT PRIMARY KEY AUTO_INCREMENT, 
+    doc_id int, 
     doc_lname varchar(100), 
     doc_fname varchar(100), 
     profession_specialty text, 
@@ -38,21 +39,20 @@ create table doctors(
 );
 
 create table appointment(
-    appointment_id INT PRIMARY KEY AUTO_INCREMENT, 
+    appointment_id int, 
     appointment_and_start_time datetime, 
     reasonforthevisit text, 
     status enum ('Scheduled', 'Completed', 'Canceled', 'No-Show') 
 );
 
 create table departments (
-    department_id INT PRIMARY KEY AUTO_INCREMENT,
+    department_id int,
     department_name varchar(100),
     deparment_loc varchar(100)
 );
 
-
 create table courses (
-    course_id INT PRIMARY KEY AUTO_INCREMENT,
+    course_id int,
     course_code varchar (15),
     course_title text,
     credits int
