@@ -25,7 +25,7 @@ create table patients(
     lname varchar(100), 
     fname varchar(100), 
     date_of_birth date, 
-    phone_number varchar(13), 
+    phone_number INT(11), 
     consultation_date date
 );
 
@@ -54,5 +54,5 @@ create table courses (
     course_id INT,
     course_code varchar (10),
     course_title text,
-    credits INT
+    credits INT (2)
 );
