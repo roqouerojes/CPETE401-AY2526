@@ -1,4 +1,3 @@
-
 create table authors(
     authors_id int, 
     lname varchar(100), 
