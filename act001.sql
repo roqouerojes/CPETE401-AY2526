@@ -20,6 +20,11 @@ create table books (
     price decimal (10,2)
 );
 
+create table book_authors(
+    book_id INT(10),
+    authors_id INT(10)
+);
+
 create table patients(
     patient_id INT (10), 
     lname varchar(100), 
@@ -54,5 +59,5 @@ create table courses (
     course_id INT (10),
     course_code varchar (10),
     course_title text,
-    credits INT (2)
+    credits INT (1)
 );
